@@ -1,0 +1,126 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  --Psgreycolor: ##cccccc;
+  --Pslightgrey: #f2f2f2;
+  --PSred: #df0024;
+  --PSdarkred: #f3c300;
+  --psAquamarine: #00ab9f;
+  --PSBlues: #2e6db4;
+  --PSpurple: #a736c4;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculators-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 37.5rem;
+  width: 25rem;
+  padding-bottom: 20px;
+  background-color: #cccccc;
+  border-radius: 1.5rem;
+}
+.input {
+  margin: 1rem;
+}
+.input::first-letter {
+  color: var(--psAquamarine);
+}
+
+.input:nth-child(1) {
+  color: var(--PSred);
+}
+
+.rows {
+  display: flex;
+  align-items: center;
+  color: var(--psAquamarine);
+  justify-content: center;
+}
+.rows1 {
+  display: flex;
+  color: var(--PSpurple);
+  align-items: center;
+  justify-content: center;
+}
+
+.rows2 {
+  display: flex;
+  color: var(--PSBlues);
+  align-items: center;
+  justify-content: center;
+}
+.rows3 {
+  display: flex;
+  color: var(--PSred);
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border: none;
+  background-color: #101010;
+  font-size: 2rem;
+  margin: 10px;
+  font-weight: 700;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-operator {
+  color: #000000;
+  background-color: var(--PSdarkred);
+  font-size: 2.3rem;
+}
+
+/* Zona movil  */
+
+@media (max-width: 768px) {
+  .calculators-container {
+    height: 70vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculators-container {
+    height: 80vh;
+    width: 100vw;
+  }
+}
+/* zona tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .calculators-container {
+    height: 50vh;
+    width: 50vw;
+  }
+}
